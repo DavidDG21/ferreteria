@@ -25,7 +25,7 @@
 				header("Location: ".base_url());
 				die();
 			}
-
+			$data['numero_vista']='0';
 			$data['page_tag'] = NOMBRE_EMPESA.' - Procesar Pago';
 			$data['page_title'] = 'Procesar Pago';
 			$data['page_name'] = "procesarpago";

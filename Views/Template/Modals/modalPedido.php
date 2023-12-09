@@ -2,16 +2,16 @@
 <div class="modal fade" id="modalFormPedido" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" >
     <div class="modal-content">
-      <div class="modal-header headerUpdate">
+      <div class="modal-header headerUpdate bg-first-color text-white">
         <h5 class="modal-title" id="titleModal">Actualizar Pedido</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-first-color ">
             <form id="formUpdatePedido" name="formUpdatePedido" class="form-horizontal">
               <input type="hidden" id="idpedido" name="idpedido" value="<?= $data['orden']['idpedido'] ?>" required="">
-              <table class="table table-bordered">
+              <table class="table table-bordered text-white">
                   <tbody>
                       <tr>
                           <td width="210">No. Pedido</td>

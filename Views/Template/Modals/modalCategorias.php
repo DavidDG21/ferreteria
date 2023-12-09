@@ -2,13 +2,13 @@
 <div class="modal fade" id="modalFormCategorias" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg" >
     <div class="modal-content">
-      <div class="modal-header headerRegister">
+      <div class="modal-header headerRegister bg-first-color">
         <h5 class="modal-title" id="titleModal">Nueva Categoría</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-first-color text-white">
             <form id="formCategoria" name="formCategoria" class="form-horizontal">
               <input type="hidden" id="idCategoria" name="idCategoria" value="">
               <input type="hidden" id="foto_actual" name="foto_actual" value="">
@@ -18,11 +18,11 @@
                 <div class="col-md-6">
                     <div class="form-group">
                       <label class="control-label">Nombre <span class="required">*</span></label>
-                      <input class="form-control" id="txtNombre" name="txtNombre" type="text" placeholder="Nombre Categoría" required="">
+                      <input class="form-control bg-first-color text-white border-bottom input" id="txtNombre" name="txtNombre" type="text" placeholder="Nombre Categoría" required="">
                     </div>
                     <div class="form-group">
                       <label class="control-label">Descripción <span class="required">*</span></label>
-                      <textarea class="form-control" id="txtDescripcion" name="txtDescripcion" rows="2" placeholder="Descripción Categoría" required=""></textarea>
+                      <textarea class="form-control bg-first-color text-white border input" id="txtDescripcion" name="txtDescripcion" rows="2" placeholder="Descripción Categoría" required=""></textarea>
                     </div>
                     <div class="form-group">
                         <label for="exampleSelect1">Estado <span class="required">*</span></label>
@@ -33,8 +33,8 @@
                     </div>  
                 </div>
                 <div class="col-md-6">
-                    <div class="photo">
-                        <label for="foto">Foto (570x380)</label>
+                    <div class="photo text-white">
+                        <label for="foto ">Foto (570x380)</label>
                         <div class="prevPhoto">
                           <span class="delPhoto notBlock">X</span>
                           <label for="foto"></label>
@@ -64,15 +64,15 @@
 <div class="modal fade" id="modalViewCategoria" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" >
     <div class="modal-content">
-      <div class="modal-header header-primary">
+      <div class="modal-header bg-first-color text-white">
         <h5 class="modal-title" id="titleModal">Datos de la categoría</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-first-color">
         <table class="table table-bordered">
-          <tbody>
+          <tbody class="text-white">
             <tr>
               <td>ID:</td>
               <td id="celId"></td>
@@ -96,7 +96,7 @@
           </tbody>
         </table>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer bg-first-color">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>

@@ -1,0 +1,93 @@
+:root{
+    --first-color:rgb(42, 50, 77);
+    --first-alpha-color:rgba(42, 50, 77, 0.75);
+    --first-alpha-xtreme-color:rgba(42,50,77,0.5);
+    --second-color:rgb(249, 174, 59);
+    --second-alpha-color:rgb(249,175,59,0.75);
+    --third-color:rgb(213, 90, 82);
+    --third-alpha-color: rgba(213, 90, 82, 0.75);
+    
+    --white-color: rgb(252,252,252);
+    --black-color: rgb(5,4,4);
+  
+    --bg-color: rgb(245,245,245);
+    --bg-alpha-color:rgba(245,245,245,0.75);
+  }
+
+  .first-color{
+    color: var(--first-color);
+  }
+  .second-color{
+    color: var(--second-color) ;
+  }
+  .third-color{
+    color: var(--third-color);
+  }
+  
+  .style-menu-desk{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--second-color) !important;
+    border-bottom: 0.2rem solid var(--second-color) ;
+  }
+
+  .bg-first-color{
+    background-color: var(--first-color) !important;
+  }
+  .bg-first-alpha-color{
+    background-color: var(--first-alpha-color) !important;
+  }
+  .bg-first-alpha-xtreme-color{
+    background-color: var(--first-alpha-xtreme-color) !important;
+  }
+
+  .bg-second-color{
+    background-color: var(--second-color) !important;
+  }
+  .bg-second-alpha-color{
+    background-color: var(--second-alpha-color) !important;
+  }
+.bg-third-color{
+    background-color: var(--third-color) !important;
+}
+.bg-third-alpha-color{
+    background-color: var(--third-alpha-color) !important;
+}
+
+.input{
+    border: none;
+}
+.input:focus{
+    border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    /* Coloca el color de fondo deseado en lugar de 'white' */
+    -webkit-text-fill-color: transparent !important;
+}
+
+
+select option{
+    background-color: var(--first-color);
+    color: white;
+}
+select:focus {
+    outline: none;
+}
+.custom-selectpicker .dropdown-toggle {
+    background-color: var(--first-color) !important; 
+    color: white !important; 
+  }
+  
+  .custom-selectpicker .dropdown-menu {
+    background-color: var(--first-color) !important; 
+    color: white !important; 
+  }
+  .custom-selectpicker > div > div{
+    background-color: var(--first-color) !important; 
+    color: white !important; 
+  }

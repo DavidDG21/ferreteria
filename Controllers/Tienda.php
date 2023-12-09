@@ -46,7 +46,7 @@
 				if(count($arrParams) > 2 AND is_numeric($arrParams[2])){
 					$pagina = $arrParams[2];
 				}
-
+				$data['numero_vista']='2';
 				$cantProductos = $this->cantProductos($idcategoria);
 				$total_registro = $cantProductos['total_registro'];
 				$desde = ($pagina-1) * PROCATEGORIA;
@@ -76,6 +76,7 @@
 				if(empty($infoProducto)){
 					header("Location:".base_url());
 				}
+				$data['numero_vista']='2';
 				$data['page_tag'] = NOMBRE_EMPESA." - ".$infoProducto['nombre'];
 				$data['page_title'] = $infoProducto['nombre'];
 				$data['page_name'] = "producto";
@@ -352,7 +353,7 @@
 													'emailCopia' => EMAIL_PEDIDOS,
 													'pedido' => $infoOrden );
 
-									sendEmail($dataEmailOrden,"email_notificacion_orden");
+									// sendEmail($dataEmailOrden,"email_notificacion_orden");
 
 									$orden = openssl_encrypt($request_pedido, METHODENCRIPT, KEY);
 									$transaccion = openssl_encrypt($idtransaccionpaypal, METHODENCRIPT, KEY);
@@ -392,6 +393,7 @@
 				$dataorden = $_SESSION['dataorden'];
 				$idpedido = openssl_decrypt($dataorden['orden'], METHODENCRIPT, KEY);
 				$transaccion = openssl_decrypt($dataorden['transaccion'], METHODENCRIPT, KEY);
+				$data['numero_vista']='0';
 				$data['page_tag'] = "Confirmar Pedido";
 				$data['page_title'] = "Confirmar Pedido";
 				$data['page_name'] = "confirmarpedido";
@@ -411,6 +413,7 @@
 			$total_paginas = ceil($total_registro / PROPORPAGINA);
 			$data['productos'] = $this->getProductosPage($desde,PROPORPAGINA);
 			//dep($data['productos']);exit;
+			$data['numero_vista']='0';
 			$data['page_tag'] = NOMBRE_EMPESA;
 			$data['page_title'] = NOMBRE_EMPESA;
 			$data['page_name'] = "tienda";
@@ -433,6 +436,7 @@
 			$desde = ($pagina-1) * PROBUSCAR;
 			$total_paginas = ceil($total_registro / PROBUSCAR);
 			$data['productos'] = $this->getProdSearch($busqueda,$desde,PROBUSCAR);
+			$data['numero_vista']='0';
 			$data['page_tag'] = NOMBRE_EMPESA;
 			$data['page_title'] = "Resultado de: ".$busqueda;
 			$data['page_name'] = "tienda";

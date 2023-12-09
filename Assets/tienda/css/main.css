@@ -285,7 +285,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v2 .wrap-menu-desktop {
-  background-color: #fff;
+  background-color: transparent;
   top: 0;
 }
 
@@ -296,7 +296,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v4 .wrap-menu-desktop {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 
@@ -309,7 +309,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color:  rgba(42,50,77,0.5);;
 }
 
 
@@ -524,7 +524,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   min-width: 15px;
   height: 15px;
   padding: 0 3px;
-  background-color: #717fe0;
+  background-color: rgb(249, 174, 59);
+  border-radius: 0.3rem;
 }
 
 /*---------------------------------------------*/
@@ -634,7 +635,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .fix-menu-desktop .wrap-menu-desktop {
   height: 70px;
-  background-color: rgba(255,255,255,1);
+  background-color: transparent;
   box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
@@ -2014,7 +2015,7 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .block1-txt-child2 {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid rgb(249, 174, 59);
   overflow: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -2033,7 +2034,7 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .block1-txt:hover {
-  background-color: rgba(103,117,214,0.8);
+  background-color: rgba(42,50,77,0.5);
 }
 
 .block1-txt:hover .block1-txt-child2 {

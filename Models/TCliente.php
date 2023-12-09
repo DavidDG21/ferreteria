@@ -61,6 +61,7 @@ trait TCliente{
 	    $return = $request_insert;
 	    return $return;
 	}
+	
 
 	public function insertDetalle(int $idpedido, int $productoid, float $precio, int $cantidad){
 		$this->con = new Mysql();

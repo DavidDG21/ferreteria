@@ -67,7 +67,11 @@
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/mystyle.css">
 <!--===============================================================================================-->
+	
+<!--===============================================================================================-->
+
 </head>
 <body class="animsition">
 	<!-- Modal -->
@@ -99,86 +103,86 @@
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
-		<div class="container-menu-desktop">
+		<div class="container-menu-desktop ">
 			<!-- Topbar -->
-			<div class="top-bar">
+			<div class="top-bar bg-first-alpha-color">
 				<div class="content-topbar flex-sb-m h-full container">
-					<div class="left-top-bar">
+					<div class="left-top-bar text-white">
 						<?php if(isset($_SESSION['login'])){ ?>
 						Bienvenido: <?= $_SESSION['userData']['nombres'].' '.$_SESSION['userData']['apellidos'] ?>
 						<?php } ?>
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m trans-04 p-lr-25" data-toggle="modal" data-target="#modalAyuda" >
-							Help & FAQs
+						<a href="#" class="flex-c-m trans-04 p-lr-25 text-white" data-toggle="modal" data-target="#modalAyuda" >
+						Help & FAQs <i class="fas fa-question m-l-10 "></i>
 						</a>
 						<?php 
 							if(isset($_SESSION['login'])){
 						?>
-						<a href="<?= base_url() ?>/dashboard" class="flex-c-m trans-04 p-lr-25">
-							Mi cuenta
+						<a href="<?= base_url() ?>/dashboard" class="flex-c-m trans-04 p-lr-25 text-white">
+							Mi cuenta <i class="fas fa-user-circle m-l-10"></i>
 						</a>
 						<?php } 
 							if(isset($_SESSION['login'])){
 						?>
-						<a href="<?= base_url() ?>/logout" class="flex-c-m trans-04 p-lr-25">
-							Salir
+						<a href="<?= base_url() ?>/logout" class="flex-c-m trans-04 p-lr-25 text-white">
+							Salir <i class="fas fa-times m-l-10"></i>
 						</a>
 						<?php }else{ ?>
-						<a href="<?= base_url() ?>/login" class="flex-c-m trans-04 p-lr-25">
-							Iniciar Sesión
+						<a href="<?= base_url() ?>/login" class="flex-c-m trans-04 p-lr-25 text-white">
+							Iniciar Sesión <i class="fas fa-user m-l-10"></i>
 						</a>
 						<?php } ?>
 					</div>
 				</div>
 			</div>
 
-			<div class="wrap-menu-desktop">
-				<nav class="limiter-menu-desktop container">
+			<div class="wrap-menu-desktop  ">	
+				<nav class="limiter-menu-desktop ">
 					
 					<!-- Logo desktop -->		
-					<a href="<?= base_url(); ?>" class="logo">
+					<a href="<?= base_url(); ?>" class="logo col-2">
 						<img src="<?= media() ?>/tienda/images/logo.png" alt="Tienda Virtual">
 					</a>
 
 					<!-- Menu desktop -->
-					<div class="menu-desktop">
-						<ul class="main-menu">
-							<li class="<?php echo $data['numero_vista']=='1'?'active-menu':'' ?>">
-								<a href="<?= base_url(); ?>">Inicio</a>
+					<div class="menu-desktop col-7">
+						<ul class="main-menu d-flex justify-content-end text-white">
+							<li class="">
+								<a class="" href="<?= base_url(); ?>"><p class="text-white <?php echo $data['numero_vista']=='1'?'style-menu-desk':'' ?>"">INICIO</p></a>
 							</li>
 
-							<li class="<?php echo $data['numero_vista']=='2'?'active-menu':'' ?>">
-								<a href="<?= base_url(); ?>/tienda">Tienda</a>
+							<li class="">
+								<a  href="<?= base_url(); ?>/tienda"><p class="text-white  <?php echo $data['numero_vista']=='2'?'style-menu-desk':'' ?>"">TIENDA</p></a>
 							</li>
 
-							<li class="<?php echo $data['numero_vista']=='3'?'active-menu':'' ?>">
-								<a href="<?= base_url(); ?>/carrito">Carrito</a>
+							<li class="">
+								<a href="<?= base_url(); ?>/carrito"><p class="text-white <?php echo $data['numero_vista']=='3'?'style-menu-desk':'' ?>"">CARRITO</p></a>
 							</li>
 							
-							<li class="<?php echo $data['numero_vista']=='4'?'active-menu':'' ?>">
-								<a href="<?= base_url(); ?>/nosotros">Nosotro</a>
+							<li class="">
+								<a href="<?= base_url(); ?>/nosotros"><p class="text-white <?php echo $data['numero_vista']=='4'?'style-menu-desk':'' ?>"">NOSOTROS</p></a>
 							</li>
 
-							<li>
-								<a href="<?= base_url(); ?>/sucursales">Sucursales</a>
-							</li>
+							<!-- <li>
+								 <a href="<?= base_url(); ?>/sucursales">Sucursales</a> 
+							 </li>   -->
 
-							<li class="<?php echo $data['numero_vista']=='5'?'active-menu':'' ?>">
-								<a href="<?= base_url(); ?>/contacto">Contacto</a>
+							<li class="">
+								<a href="<?= base_url(); ?>/contacto"><p class="text-white <?php echo $data['numero_vista']=='5'?'style-menu-desk':'' ?>">CONTACTO</p></a>
 							</li>
 						</ul>
 					</div>	
 
 					<!-- Icon header -->
-					<div class="wrap-icon-header flex-w flex-r-m">
+					<div class="wrap-icon-header flex-w flex-r-m col-2">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
-							<i class="zmdi zmdi-search"></i>
+							<i class="zmdi zmdi-search text-white"></i>
 						</div>
 						<?php if($data['page_name'] != "carrito" and $data['page_name'] != "procesarpago"){ ?>
 						<div class="cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="<?= $cantCarrito; ?> ">
-							<i class="zmdi zmdi-shopping-cart"></i>
+							<i class="zmdi zmdi-shopping-cart text-white"></i>
 						</div>
 						<?php } ?>
 					</div>
@@ -187,7 +191,7 @@
 		</div>
 
 		<!-- Header Mobile -->
-		<div class="wrap-header-mobile">
+		<div class="wrap-header-mobile bg-first-color">
 			<!-- Logo moblie -->		
 			<div class="logo-mobile">
 				<a href="<?= base_url(); ?>"><img src="<?= media() ?>/tienda/images/logo.png" alt="Tienda Virtual"></a>
@@ -196,19 +200,19 @@
 			<!-- Icon header -->
 			<div class="wrap-icon-header flex-w flex-r-m m-r-15">
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
-					<i class="zmdi zmdi-search"></i>
+					<i class="zmdi zmdi-search text-white"></i>
 				</div>
 				<?php if($data['page_name'] != "carrito" and $data['page_name'] != "procesarpago"){ ?>
 				<div class="cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="<?= $cantCarrito; ?>">
-					<i class="zmdi zmdi-shopping-cart"></i>
+					<i class="zmdi zmdi-shopping-cart text-white"></i>
 				</div>
 				<?php } ?>
 			</div>
 
 			<!-- Button show menu -->
-			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze text-white">
+				<span class="hamburger-box text-white">
+					<span class="hamburger-inner text-white"></span>
 				</span>
 			</div>
 		</div>
@@ -216,34 +220,34 @@
 
 		<!-- Menu Mobile -->
 		<div class="menu-mobile">
-			<ul class="topbar-mobile">
-				<li>
-					<div class="left-top-bar">
+			<ul class="topbar-mobile bg-first-alpha-xtreme-color">
+				<li class="bg-second-color">
+					<div class="left-top-bar text-white justify-content-center">
 						<?php if(isset($_SESSION['login'])){ ?>
 						Bienvenido: <?= $_SESSION['userData']['nombres'].' '.$_SESSION['userData']['apellidos'] ?>
 						<?php } ?>
 					</div>
 				</li>
 
-				<li>
-					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m p-lr-10 trans-04" data-toggle="modal" data-target="#modalAyuda">
+				<li class="bg-second-color">
+					<div class="right-top-bar flex-w h-full justify-content-center  ">
+						<a href="#" class="flex-c-m p-lr-10 trans-04 text-white" data-toggle="modal" data-target="#modalAyuda">
 							Help & FAQs
 						</a>
 						<?php 
 							if(isset($_SESSION['login'])){
 						?>
-						<a href="<?= base_url() ?>/dashboard" class="flex-c-m trans-04 p-lr-25">
+						<a href="<?= base_url() ?>/dashboard" class="flex-c-m trans-04 p-lr-25 text-white">
 							Mi cuenta
 						</a>
 						<?php } 
 							if(isset($_SESSION['login'])){
 						?>
-						<a href="<?= base_url() ?>/logout" class="flex-c-m trans-04 p-lr-25">
+						<a href="<?= base_url() ?>/logout" class="flex-c-m trans-04 p-lr-25 text-white">
 							Salir
 						</a>
 						<?php }else{ ?>
-						<a href="<?= base_url() ?>/login" class="flex-c-m trans-04 p-lr-25">
+						<a href="<?= base_url() ?>/login" class="flex-c-m trans-04 p-lr-25 text-white">
 							Iniciar Sesión
 						</a>
 						<?php } ?>
@@ -251,29 +255,29 @@
 				</li>
 			</ul>
 
-			<ul class="main-menu-m">
+			<ul class="main-menu-m text-center bg-first-color">
 				<li>
-					<a href="<?= base_url(); ?>">Inicio</a>
+					<a href="<?= base_url(); ?>"><i class="fas fa-home text-white m-r-10"></i> Inicio</a>
 				</li>
 
 				<li>
-					<a href="<?= base_url(); ?>/tienda">Tienda</a>
+					<a href="<?= base_url(); ?>/tienda"><i class="fas fa-store text-white m-r-10"></i>Tienda</a>
 				</li>
 
 				<li>
-					<a href="<?= base_url(); ?>/carrito">Carrito</a>
+					<a href="<?= base_url(); ?>/carrito"><i class="fas fa-shopping-cart text-white m-r-10"></i>Carrito</a>
 				</li>
 
 				<li>
-					<a href="<?= base_url(); ?>/nosotros">Nosotros</a>
+					<a href="<?= base_url(); ?>/nosotros"><i class="fas fa-users text-white m-r-10"></i>Nosotros</a>
 				</li>
 
-				<li>
+				<!-- <li>
 					<a href="<?= base_url(); ?>/sucursales">Sucursales</a>
-				</li>
+				</li> -->
 
 				<li>
-					<a href="<?= base_url(); ?>/contacto">Contacto</a>
+					<a href="<?= base_url(); ?>/contacto"> <i class="far fa-id-badge text-white m-r-10"></i>Contacto</a>
 				</li>
 			</ul>
 		</div>

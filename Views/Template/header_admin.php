@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="<?= media();?>/css/bootstrap-select.min.css"> 
     <link rel="stylesheet" type="text/css" href="<?= media();?>/js/datepicker/jquery-ui.min.css"> 
     <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/mystyleadmin.css">
   </head>
   <body class="app sidebar-mini">
     <div id="divLoading" >
@@ -22,7 +23,7 @@
       </div>
     </div>
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="<?= base_url(); ?>/dashboard">Tienda Virtual</a>
+    <header class="app-header bg-third-color"><a class="app-header__logo bg-third-alpha-color" href="<?= base_url(); ?>/dashboard">Ferreteria Anahi</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"><i class="fas fa-bars"></i></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">

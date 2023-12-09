@@ -26,8 +26,8 @@
 	//Api PayPal
 	//SANDBOX PAYPAL
 	const URLPAYPAL = "https://api-m.sandbox.paypal.com";
-	const IDCLIENTE = "";
-	const SECRET = "";
+	const IDCLIENTE = "AR_JzxdZ6q0PXEPToQuJ32kK5aeO6vWqoE4qOiY6P3XyBBO5v7F2_EvUmdpgG9C6J0bEiHAcMkPh5qVP";
+	const SECRET = "EEZsx-DMVy0JY144T5mF7Tj2tC2UOBThYquHJwRhaXO_MNTGLwKvo9kmkHjxpTA9is-f5ctAgktgOHQn";
 	//LIVE PAYPAL
 	//const URLPAYPAL = "https://api-m.paypal.com";
 	//const IDCLIENTE = "";
@@ -35,21 +35,21 @@
 
 	//Datos envio de correo
 	const NOMBRE_REMITENTE = "Tienda Virtual";
-	const EMAIL_REMITENTE = "no-reply@tecomsis.com";
-	const NOMBRE_EMPESA = "Tienda Virtual";
-	const WEB_EMPRESA = "www.tecomsis.com";
+	const EMAIL_REMITENTE = "ferreterianahi@ferreterianahi.com";
+	const NOMBRE_EMPESA = "Ferreteria anahi";
+	const WEB_EMPRESA = "www.ferreterianahi.com";
 
-	const DESCRIPCION = "Una tienda especializada en moda de avanzada para hombre y mujeres.";
+	const DESCRIPCION = "Una tienda especializada en la venta de articulos ferreteros";
 	const SHAREDHASH = "TiendaVirtual";
 
 	//Datos Empresa
 	const DIRECCION = "Cañete";
 	const TELEMPRESA = "+(056)215487";
 	const WHATSAPP = "962452145";
-	const EMAIL_EMPRESA = "info@tecomsis.com";
-	const EMAIL_PEDIDOS = "info@tecomsis.com"; 
-	const EMAIL_SUSCRIPCION = "info@tecomsis.com";
-	const EMAIL_CONTACTO = "info@tecomsis.com";
+	const EMAIL_EMPRESA = "ferreterianahi@ferreterianahi.com";
+	const EMAIL_PEDIDOS = "ferreterianahi@ferreterianahi.com"; 
+	const EMAIL_SUSCRIPCION = "ferreterianahi@ferreterianahi.com";
+	const EMAIL_CONTACTO = "ferreterianahi@ferreterianahi.com";
 
 	const CAT_SLIDER = "1,2,3";
 	const CAT_BANNER = "4,5,6";
@@ -98,8 +98,8 @@
 	const PROBUSCAR = 4;
 
 	//REDES SOCIALES
-	const FACEBOOK = "https://www.facebook.com/tecomsis";
-	const INSTAGRAM = "https://www.instagram.com/tecomsis/";
+	const FACEBOOK = "https://www.facebook.com/";
+	const INSTAGRAM = "https://www.instagram.com/";
 	
 
  ?>

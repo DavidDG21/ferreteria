@@ -12,8 +12,8 @@ $tituloTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['titul
 $infoTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['contenido'] : "";
 
 ?>
-<script
-    src="https://www.paypal.com/sdk/js?client-id=<?= IDCLIENTE ?>&currency=<?= CURRENCY ?>">
+
+ <script src="https://www.paypal.com/sdk/js?client-id=<?php echo IDCLIENTE?>&currency=USD">
 </script>
 <script>
   paypal.Buttons({
@@ -222,7 +222,7 @@ $infoTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['conteni
 <?php 
 	if(isset($_SESSION['login'])){
 ?>
-					<div id="divMetodoPago" class="notblock">
+					<div id="divMetodoPago" class="">
 						<div id="divCondiciones">
 							<input type="checkbox" id="condiciones" >
 							<label for="condiciones"> Aceptar </label>
@@ -239,6 +239,7 @@ $infoTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['conteni
 										<input type="radio" id="paypal" class="methodpago" name="payment-method" checked="" value="Paypal">
 										<img src="<?= media()?>/images/img-paypal.jpg" alt="Icono de PayPal" class="ml-space-sm" width="74" height="20">
 									</label>
+									
 								</div>
 								<div>
 									<label for="contraentrega">
@@ -272,6 +273,7 @@ $infoTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['conteni
 									</div>
 									<br>
 									<div id="paypal-btn-container"></div>
+									<!-- <div id="paypal-button-container"></div> -->
 								</div>
 							</div>
 						</div>

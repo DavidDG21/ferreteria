@@ -1,0 +1,130 @@
+:root{
+    --first-color:rgb(42, 50, 77);
+    --first-alpha-color:rgba(42, 50, 77, 0.75);
+    --first-alpha-xtreme-color:rgba(42,50,77,0.5);
+    --second-color:rgb(249, 174, 59);
+    --second-alpha-color:rgb(249,175,59,0.75);
+    
+    --white-color: rgb(252,252,252);
+    --black-color: rgb(5,4,4);
+  
+    --bg-color: rgb(245,245,245);
+    --bg-alpha-color:rgba(245,245,245,0.75);
+  }
+
+  .first-color{
+    color: var(--first-color);
+  }
+  .second-color{
+    color: var(--second-color) ;
+  }
+  
+  .style-menu-desk{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--second-color) !important;
+    border-bottom: 0.2rem solid var(--second-color) ;
+  }
+
+  .bg-first-color{
+    background-color: var(--first-color) !important;
+  }
+  .bg-first-alpha-color{
+    background-color: var(--first-alpha-color) !important;
+  }
+  .bg-first-alpha-xtreme-color{
+    background-color: var(--first-alpha-xtreme-color) !important;
+  }
+
+  .bg-second-color{
+    background-color: var(--second-color) !important;
+  }
+  .bg-second-alpha-color{
+    background-color: var(--second-alpha-color) !important;
+  }
+
+/* ======================================================================================== */
+/* =                                 cambiar color a los iconos                           = */
+/* =========================================================================================*/
+
+.fa-facebook{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #4267B2; 
+    color: white;
+    font-size: 1.5rem; 
+}
+.fa-instagram {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, #E4405F, #FBB03B); 
+    font-size: 1.5rem;
+}
+
+.fa-instagram::before {
+    background: white; 
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-whatsapp{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #25D366;
+    color: white; 
+    font-size: 1.5rem;
+}
+
+
+/* ======================================================================================== */
+/* =                                 Login colorres                                         = */
+/* =========================================================================================*/
+.bg-login{
+        background: linear-gradient(135deg,
+                    rgb(42, 50, 77) 25%,
+                    rgba(42, 50, 77, 0.7) 25%,
+                    rgba(42, 50, 77, 0.7) 50%,
+                    rgb(249, 174, 59) 50%,
+                    rgb(249, 174, 59) 75%,
+                    rgba(249, 174, 59, 0.7) 75%);      
+}
+
+/* ======================================================================================== */
+/* =                                borde animado de card                                = */
+/* =========================================================================================*/
+@keyframes borderAnimation {
+    0% {
+      border-color: rgb(249, 174, 59) rgb(42, 50, 77) rgb(42, 50, 77) rgb(249, 174, 59);
+    }
+    25% {
+      border-color: rgb(42, 50, 77) rgb(249, 174, 59) rgb(249, 174, 59) rgb(42, 50, 77);
+    }
+    50% {
+      border-color: rgb(249, 174, 59) rgb(42, 50, 77) rgb(42, 50, 77) rgb(249, 174, 59);
+    }
+    75% {
+      border-color: rgb(42, 50, 77) rgb(249, 174, 59) rgb(249, 174, 59) rgb(42, 50, 77);
+    }
+    100% {
+      border-color: rgb(249, 174, 59) rgb(42, 50, 77) rgb(42, 50, 77) rgb(249, 174, 59);
+    }
+  }
+  
+  .border-animated {
+    border: 4px solid;
+    border-color: rgb(249, 174, 59) rgb(42, 50, 77) rgb(42, 50, 77) rgb(249, 174, 59);
+    animation: borderAnimation 4s infinite linear; /* Aumenta la duración a 4 segundos */
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 1rem;
+  }
+
+/* ======================================================================================== */
+/* =                                borde animado                                        = */
+/* =========================================================================================*/
+

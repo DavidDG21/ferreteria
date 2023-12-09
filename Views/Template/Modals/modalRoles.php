@@ -1,25 +1,25 @@
 <!-- Modal -->
 <div class="modal fade" id="modalFormRol" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header headerRegister">
+    <div class="modal-content bg-first-color">
+      <div class="modal-header headerRegister bg-first-color">
         <h5 class="modal-title" id="titleModal">Nuevo Rol</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-          <div class="tile">
+      <div class="modal-body bg-first-color ">
+          <div class="tile bg-first-color text-white">
             <div class="tile-body">
-              <form id="formRol" name="formRol">
+              <form id="formRol" name="formRol" class="">
                 <input type="hidden" id="idRol" name="idRol" value="">
                 <div class="form-group">
                   <label class="control-label">Nombre</label>
-                  <input class="form-control" id="txtNombre" name="txtNombre" type="text" placeholder="Nombre del rol" required="">
+                  <input class="form-control bg-first-color text-white border-bottom input" id="txtNombre" name="txtNombre" type="text" placeholder="Nombre del rol" required="">
                 </div>
                 <div class="form-group">
                   <label class="control-label">Descripción</label>
-                  <textarea class="form-control" id="txtDescripcion" name="txtDescripcion" rows="2" placeholder="Descripción del rol" required=""></textarea>
+                  <textarea class="form-control bg-first-color text-white input" id="txtDescripcion" name="txtDescripcion" rows="2" placeholder="Descripción del rol" required=""></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleSelect1">Estado</label>

@@ -2,13 +2,13 @@
 <div class="modal fade" id="modalFormProductos" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl" >
     <div class="modal-content">
-      <div class="modal-header headerRegister">
+      <div class="modal-header headerRegister bg-first-color ">
         <h5 class="modal-title" id="titleModal">Nueva Producto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-first-color text-white">
             <form id="formProductos" name="formProductos" class="form-horizontal">
               <input type="hidden" id="idProducto" name="idProducto" value="">
               <p class="text-primary">Los campos con asterisco (<span class="required">*</span>) son obligatorios.</p>
@@ -16,18 +16,18 @@
                 <div class="col-md-8">
                     <div class="form-group">
                       <label class="control-label">Nombre Producto <span class="required">*</span></label>
-                      <input class="form-control" id="txtNombre" name="txtNombre" type="text" required="">
+                      <input class="form-control bg-first-color text-white border-bottom input" id="txtNombre" name="txtNombre" type="text" required="">
                     </div>
                     <div class="form-group">
                       <label class="control-label">Descripción Producto</label>
-                      <textarea class="form-control" id="txtDescripcion" name="txtDescripcion" ></textarea>
+                      <textarea class="form-control bg-first-color text-white border input" id="txtDescripcion" name="txtDescripcion" ></textarea>
                     </div>
                     
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="control-label">Código <span class="required">*</span></label>
-                        <input class="form-control" id="txtCodigo" name="txtCodigo" type="text" placeholder="Código de barra" required="">
+                        <input class="form-control bg-first-color text-white border-bottom input" id="txtCodigo" name="txtCodigo" type="text" placeholder="Código de barra" required="">
                         <br>
                         <div id="divBarCode" class="notblock textcenter">
                             <div id="printCode">
@@ -39,11 +39,11 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label class="control-label">Precio <span class="required">*</span></label>
-                            <input class="form-control" id="txtPrecio" name="txtPrecio" type="text" required="">
+                            <input class="form-control bg-first-color text-white border-bottom input" id="txtPrecio" name="txtPrecio" type="text" required="">
                         </div>
                         <div class="form-group col-md-6">
                             <label class="control-label">Stock <span class="required">*</span></label>
-                            <input class="form-control" id="txtStock" name="txtStock" type="text" required="">
+                            <input class="form-control bg-first-color text-white border-bottom input" id="txtStock" name="txtStock" type="text" required="">
                         </div>
                     </div>
 
