@@ -112,15 +112,15 @@
 <!-- Modal -->
 <div class="modal fade" id="modalViewProducto" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl" >
-    <div class="modal-content">
-      <div class="modal-header header-primary">
+    <div class="modal-content bg-first-color text-white">
+      <div class="modal-header header-primary bg-first-color text-white">
         <h5 class="modal-title" id="titleModal">Datos del Producto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <table class="table table-bordered">
+      <div class="modal-body ">
+        <table class="table table-bordered text-white">
           <tbody>
             <tr>
               <td>Codigo:</td>

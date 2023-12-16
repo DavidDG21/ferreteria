@@ -1,50 +1,50 @@
 <!-- Modal -->
 <div class="modal fade" id="modalFormPerfil" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg" >
-    <div class="modal-content">
-      <div class="modal-header headerUpdate">
+    <div class="modal-content bg-first-color">
+      <div class="modal-header headerUpdate bg-first-color text-white">
         <h5 class="modal-title" id="titleModal">Actualizar Datos</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span class="text-white" aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-            <form id="formPerfil" name="formPerfil" class="form-horizontal">
+      <div class="modal-body ">
+            <form id="formPerfil" name="formPerfil" class="form-horizontal text-white bg-first-color">
               <p class="text-primary">Los campos con asterisco (<span class="required">*</span>) son obligatorios.</p>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="txtIdentificacion">Identificación <span class="required">*</span></label>
-                  <input type="text" class="form-control" id="txtIdentificacion" name="txtIdentificacion" value="<?= $_SESSION['userData']['identificacion']; ?>" required="">
+                  <input type="text" class="form-control bg-first-color text-white border-bottom input" id="txtIdentificacion" name="txtIdentificacion" value="<?= $_SESSION['userData']['identificacion']; ?>" required="">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="txtNombre">Nombres <span class="required">*</span></label>
-                  <input type="text" class="form-control valid validText" id="txtNombre" name="txtNombre" value="<?= $_SESSION['userData']['nombres']; ?>" required="">
+                  <input type="text" class="form-control valid validText bg-first-color text-white border-bottom input" id="txtNombre" name="txtNombre" value="<?= $_SESSION['userData']['nombres']; ?>" required="">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="txtApellido">Apellidos <span class="required">*</span></label>
-                  <input type="text" class="form-control valid validText" id="txtApellido" name="txtApellido" value="<?= $_SESSION['userData']['apellidos']; ?>" required="">
+                  <input type="text" class="form-control valid validText bg-first-color text-white border-bottom input" id="txtApellido" name="txtApellido" value="<?= $_SESSION['userData']['apellidos']; ?>" required="">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="txtTelefono">Teléfono <span class="required">*</span></label>
-                  <input type="text" class="form-control valid validNumber" id="txtTelefono" name="txtTelefono" value="<?= $_SESSION['userData']['telefono']; ?>" required="" onkeypress="return controlTag(event);">
+                  <input type="text" class="form-control valid validNumber bg-first-color text-white border-bottom input" id="txtTelefono" name="txtTelefono" value="<?= $_SESSION['userData']['telefono']; ?>" required="" onkeypress="return controlTag(event);">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="txtEmail">Email</label>
-                  <input type="email" class="form-control valid validEmail" id="txtEmail" name="txtEmail" value="<?= $_SESSION['userData']['email_user']; ?>" required="" readonly disabled >
+                  <input type="email" class="form-control valid validEmail bg-first-color text-white border-bottom input" id="txtEmail" name="txtEmail" value="<?= $_SESSION['userData']['email_user']; ?>" required="" readonly disabled >
                 </div>
               </div>
              <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="txtPassword">Password</label>
-                  <input type="password" class="form-control" id="txtPassword" name="txtPassword" >
+                  <input type="password" class="form-control bg-first-color text-white border-bottom input" id="txtPassword" name="txtPassword" >
                 </div>
                 <div class="form-group col-md-6">
                   <label for="txtPasswordConfirm">Confirmar Password</label>
-                  <input type="password" class="form-control" id="txtPasswordConfirm" name="txtPasswordConfirm" >
+                  <input type="password" class="form-control bg-first-color text-white border-bottom input" id="txtPasswordConfirm" name="txtPasswordConfirm" >
                 </div>
              </div>
               <div class="tile-footer">
@@ -56,3 +56,5 @@
     </div>
   </div>
 </div>
+
+

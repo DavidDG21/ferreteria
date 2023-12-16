@@ -1,3 +1,19 @@
+window.onload = function() {
+    let snowContainer = document.getElementById('snow');
+    let quantity = 100; // Cantidad de copos de nieve
+  
+    for (let i = 0; i < quantity; i++) {
+      let snowflake = document.createElement('span');
+      snowflake.classList.add('snowflake');
+      snowflake.textContent = '❄'; // Símbolo de copo de nieve
+      snowflake.style.left = Math.random() * 100 + 'vw';
+      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Duración aleatoria de la animación
+      snowflake.style.opacity = Math.random();
+      snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+      snowContainer.appendChild(snowflake);
+    }
+  };
+
 
 (function ($) {
     "use strict";
@@ -268,3 +284,6 @@
 
 
 })(jQuery);
+
+
+  

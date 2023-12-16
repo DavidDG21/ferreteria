@@ -8,8 +8,9 @@
 	$tituloPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['titulo'] : "";
 	$infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['contenido'] : "";
  ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<title><?= $data['page_tag']; ?></title>
 	<meta charset="UTF-8">
@@ -73,6 +74,9 @@
 <!--===============================================================================================-->
 
 </head>
+
+
+
 <body class="animsition">
 	<!-- Modal -->
 	<div class="modal fade" id="modalAyuda" tabindex="-1" aria-hidden="true">
@@ -100,6 +104,9 @@
         <img src="<?= media(); ?>/images/loading.svg" alt="Loading">
       </div>
     </div>
+	<div class="snow" id="snow"></div>
+	
+
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
@@ -317,3 +324,4 @@
 			</div>
 		</div>
 	</div>
+	

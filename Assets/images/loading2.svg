@@ -1,0 +1,11 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="25,1 48,12.5 48,37.5 25,49 2,37.5 2,12.5" stroke="#009385" stroke-width="2" fill="none">
+        <animate attributeName="fill" values="#009385;transparent;transparent;transparent;transparent;transparent;transparent" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="transparent;#009385;transparent;transparent;transparent;transparent;transparent" begin="0.3s" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="transparent;transparent;#009385;transparent;transparent;transparent;transparent" begin="0.6s" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="transparent;transparent;transparent;#009385;transparent;transparent;transparent" begin="0.9s" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="transparent;transparent;transparent;transparent;#009385;transparent;transparent" begin="1.2s" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="transparent;transparent;transparent;transparent;transparent;#009385;transparent" begin="1.5s" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="transparent;transparent;transparent;transparent;transparent;transparent;#009385" begin="1.8s" dur="2s" repeatCount="indefinite"/>
+    </polygon>
+</svg>

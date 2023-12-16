@@ -191,8 +191,8 @@ function fntInputFile(){
             if(uploadFoto !=''){
                 let type = fileimg[0].type;
                 let name = fileimg[0].name;
-                if(type != 'image/jpeg' && type != 'image/jpg' && type != 'image/png'){
-                    prevImg.innerHTML = "Archivo no válido";
+                if(type != 'image/jpeg' && type != 'image/jpg' && type != 'image/png' && type != 'image/webp'){   
+                    prevImg.innerHTML = "Archivo no válido"; 
                     uploadFoto.value = "";
                     return false;
                 }else{

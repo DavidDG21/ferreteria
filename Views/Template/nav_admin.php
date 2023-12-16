@@ -69,14 +69,14 @@
         </li>
          <?php } ?>
 
-        <?php if(!empty($_SESSION['permisos'][MSUSCRIPTORES]['r'])){ ?>
+        <!-- <?php if(!empty($_SESSION['permisos'][MSUSCRIPTORES]['r'])){ ?>
         <li>
             <a class="app-menu__item" href="<?= base_url(); ?>/suscriptores">
                 <i class="app-menu__icon fas fa-user-tie" aria-hidden="true"></i>
                 <span class="app-menu__label">Suscriptores</span>
             </a>
         </li>
-         <?php } ?>
+         <?php } ?> -->
 
          <?php if(!empty($_SESSION['permisos'][MDCONTACTOS]['r'])){ ?>
         <li>

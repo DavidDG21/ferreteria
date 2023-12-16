@@ -13,6 +13,7 @@
 				header("Location: ".base_url());
 			}else{
 				$data['page_tag'] = NOMBRE_EMPESA;
+				$data['numero_vista']='0';
 				$data['page_title'] = NOMBRE_EMPESA." - ".$pageContent['titulo'];
 				$data['page_name'] = $pageContent['titulo'];
 				$data['page'] = $pageContent;

@@ -37,7 +37,7 @@
 								<!-- <a href="<?= base_url().'/tienda/categoria/'.$arrSlider[$i]['idcategoria'].'/'.$ruta; ?>" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 									Ver productos
 								</a> -->
-								<a href="<?= base_url();?>/tienda" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+								<a href="<?= base_url();?>/tienda" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 bg-first-color">
 									Ver productos
 								</a>
 							</div>
